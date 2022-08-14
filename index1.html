@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='index1.css' rel='stylesheet'>
+
+  <title>Travel Scotland - Home Page</title>
+</head>
+
+<body>
+  <header>
+    <div class="title"><a href="index1.html">Travel Scotland</a></div>
+    <nav class="navbar">
+      <ul class="nav-items">
+        <li class="nav-item"><a href="index1.html" class="link">Home</a></li>
+        <li class="nav-item"><a href="places1.html" class="link">Places to go</a></li>
+        <li class="nav-item"><a href="things1.html" class="link">Things to do</a></li>
+        <li class="nav-item"><a href="trips1.html" class="link">Trip Ideas</a></li>
+        <li class="nav-item"><a href="UEQ1.html" class="link" target="_blank">Questionnaire</a></li>
+      </ul>
+    </nav>
+    <div class="menu">
+      <p>Menu</p>
+    </div>
+    <div class="mobile-menu">
+      <i class="bx bx-menu"></i>
+      <i class="bx bx-x"></i>
+    </div>
+  </header>
+
+  <main>
+    <div class="videoContainer">
+      <video id="homepageVideo" loop muted>
+        <source src="BGvid.mp4" type="video/mp4" />
+      </video>
+      <button id="play_button"><i class="fa fa-play"></i>
+        Play</button>
+    </div>
+
+    <section class="container main">
+      <div class="main-text">
+        <h1 class="headline">Welcome to Scotland</h1>
+        <h2 class="secondary-text">Fàilte gu Alba
+        </h2>
+      </div>
+    </section>
+
+    <section class="container highlights">
+      <h3>See what Scotland has to offer</h3>
+      <hr>
+      <div id="carousel">
+        <div class="slide">
+          <p>Islands and Coasts</p>
+          <a href="places1.html#islands">
+            <div class="overlay"><img src="beach.jpeg" /></div>
+          </a>
+        </div>
+        <div class="slide">
+          <p>History</p>
+          <a href="things1.html#history">
+            <div class="overlay"><img src="castle.jpeg" /></div>
+          </a>
+        </div>
+        <div class="slide">
+          <p>Outdoor Adventure</p>
+          <a href="things1.html#outdoor">
+            <div class="overlay"><img src="scenery.jpeg" /></div>
+          </a>
+        </div>
+        <div class="slide">
+          <p>Scenery</p>
+          <a href="places1.html#scenic">
+            <div class="overlay"><img src="night.jpg" /></div>
+          </a>
+        </div>
+        <div class="slide">
+          <p>Cities and Culture</p>
+          <a href="places1.html#cities">
+            <div class="overlay"><img src="edinburgh.jpeg" /></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="full_hr">
+
+    <section class="advice">
+      <h3>Travel Advice</h3>
+      <a href="https://www.gov.uk/uk-border-control">Entering the UK</a>
+      <a href="https://www.gov.scot/coronavirus-covid-19/">COVID-19</a>
+    </section>
+
+    <section class="weather">
+      <h3>Weather</h3>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/55d95n3d19/edinburgh/" data-label_1="EDINBURGH"
+        data-label_2="WEATHER" data-font="Arial" data-icons="Climacons Animated" data-theme="weather_one">Edinburgh
+        Weather</a>
+      <script>
+        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+      </script>
+    </section>
+
+    <section class="playlist">
+      <h3>Get Inspired</h3>
+      <iframe class="spotify" style="border-radius:12px"
+        src="https://open.spotify.com/embed/playlist/37i9dQZF1DX1lHf6fzlf1u?utm_source=generator&theme=0" height="80"
+        frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer">
+      <div class="footer-item">
+        <h2 class="footer-title">Tessa Sheridan - University of the West of Scotland</h2>
+        <div class="footer-items">
+          <h3>Contact: B00410147@studentmail.uws.ac.uk</h3>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="index1.js"></script>
+
+</body>
+</html>
